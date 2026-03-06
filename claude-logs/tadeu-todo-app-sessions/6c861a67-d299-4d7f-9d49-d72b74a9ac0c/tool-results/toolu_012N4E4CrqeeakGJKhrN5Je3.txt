@@ -1,0 +1,473 @@
+Creating 8 Testing Stories in Azure DevOps...
+Organization: https://dev.azure.com/zartis-digital
+Project: Todo-App (Tadeu Marques)
+
+Creating Story 6.1: Set Up Testing Infrastructure...
+{
+  "fields": {
+    "Microsoft.VSTS.Common.Priority": 1,
+    "Microsoft.VSTS.Common.StateChangeDate": "2026-01-15T23:25:35.45Z",
+    "Microsoft.VSTS.Scheduling.StoryPoints": 5.0,
+    "System.AreaPath": "Todo-App (Tadeu Marques)",
+    "System.BoardColumn": "To Do",
+    "System.BoardColumnDone": false,
+    "System.ChangedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.ChangedDate": "2026-01-15T23:25:35.45Z",
+    "System.CommentCount": 0,
+    "System.CreatedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.CreatedDate": "2026-01-15T23:25:35.45Z",
+    "System.Description": "As a developer I want a testing framework configured so that I can write and run tests.\n\n## Context\nThe application currently has zero test coverage. We need to set up the testing infrastructure before we can write unit tests, integration tests, and E2E tests.\n\n## Acceptance Criteria\n- Vitest (or Jest) is installed and configured for unit/integration tests\n- Playwright (or Cypress) is installed and configured for E2E tests\n- Testing Library (@testing-library/react) is available for component tests\n- Test scripts are added to package.json (test, test:unit, test:e2e)\n- Tests can run successfully with npm test\n- Test configuration files are created and documented\n- Sample test runs successfully to verify setup\n- CI/CD integration is documented (for Story 6.8)\n\n## Technical Notes\nRecommended packages:\n- vitest, @testing-library/react, @testing-library/jest-dom\n- @playwright/test or cypress\n- Configure test scripts in package.json\n- Set up test database for integration tests (separate from dev.db)",
+    "System.IterationPath": "Todo-App (Tadeu Marques)",
+    "System.Reason": "Added to backlog",
+    "System.State": "To Do",
+    "System.Tags": "infrastructure; technical-setup; testing",
+    "System.TeamProject": "Todo-App (Tadeu Marques)",
+    "System.Title": "Set Up Testing Infrastructure",
+    "System.WorkItemType": "Issue",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column": "To Do",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column.Done": false
+  },
+  "id": 2902,
+  "multilineFieldsFormat": {
+    "System.Description": "html"
+  },
+  "relations": null,
+  "rev": 1,
+  "url": "https://dev.azure.com/zartis-digital/4fe169b2-0f76-4fb2-b34b-3fcab8b568ae/_apis/wit/workItems/2902"
+}
+Creating Story 6.2: Write Unit Tests for Server Actions...
+{
+  "fields": {
+    "Microsoft.VSTS.Common.Priority": 1,
+    "Microsoft.VSTS.Common.StateChangeDate": "2026-01-15T23:25:36.607Z",
+    "Microsoft.VSTS.Scheduling.StoryPoints": 8.0,
+    "System.AreaPath": "Todo-App (Tadeu Marques)",
+    "System.BoardColumn": "To Do",
+    "System.BoardColumnDone": false,
+    "System.ChangedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.ChangedDate": "2026-01-15T23:25:36.607Z",
+    "System.CommentCount": 0,
+    "System.CreatedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.CreatedDate": "2026-01-15T23:25:36.607Z",
+    "System.Description": "As a developer I want comprehensive unit tests for server actions so that I can prevent regressions in core logic.\n\n## Context\nServer actions in app/actions/todos.ts contain all CRUD logic but have no test coverage. These are the highest-risk components and must be tested before production.\n\n## Acceptance Criteria\n- Tests written for getTodos() covering: Returns sorted todos correctly, Handles empty database, Handles database errors\n- Tests written for createTodo() covering: Valid input creates todo successfully, Missing title returns error, Default values applied correctly, Path revalidation called\n- Tests written for updateTodo() covering: Partial updates work correctly, Invalid ID returns error, All fields update independently\n- Tests written for deleteTodo() covering: Deletes existing todo, Handles non-existent ID gracefully\n- Tests written for toggleTodo() covering: Flips completion status correctly, Handles non-existent ID\n- Test coverage for server actions &gt; 90%\n- All tests passing\n- Mock Prisma client for test isolation\n\n## Technical Notes\nTest file: app/actions/todos.test.ts\nMock Prisma client to avoid real database operations\nTest both success and error paths\nVerify revalidatePath is called where expected",
+    "System.IterationPath": "Todo-App (Tadeu Marques)",
+    "System.Reason": "Added to backlog",
+    "System.State": "To Do",
+    "System.Tags": "server-actions; testing; unit-tests",
+    "System.TeamProject": "Todo-App (Tadeu Marques)",
+    "System.Title": "Write Unit Tests for Server Actions",
+    "System.WorkItemType": "Issue",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column": "To Do",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column.Done": false
+  },
+  "id": 2903,
+  "multilineFieldsFormat": {
+    "System.Description": "html"
+  },
+  "relations": null,
+  "rev": 1,
+  "url": "https://dev.azure.com/zartis-digital/4fe169b2-0f76-4fb2-b34b-3fcab8b568ae/_apis/wit/workItems/2903"
+}
+Creating Story 6.3: Write Integration Tests for Database Operations...
+{
+  "fields": {
+    "Microsoft.VSTS.Common.Priority": 2,
+    "Microsoft.VSTS.Common.StateChangeDate": "2026-01-15T23:25:37.41Z",
+    "Microsoft.VSTS.Scheduling.StoryPoints": 5.0,
+    "System.AreaPath": "Todo-App (Tadeu Marques)",
+    "System.BoardColumn": "To Do",
+    "System.BoardColumnDone": false,
+    "System.ChangedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.ChangedDate": "2026-01-15T23:25:37.41Z",
+    "System.CommentCount": 0,
+    "System.CreatedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.CreatedDate": "2026-01-15T23:25:37.41Z",
+    "System.Description": "As a developer I want integration tests that verify database operations so that I ensure data persistence works correctly.\n\n## Context\nIntegration tests verify that Prisma ORM and SQLite database work correctly together. These tests use a real test database (not mocked).\n\n## Acceptance Criteria\n- Test database configured (SQLite in-memory or separate file)\n- beforeEach/afterEach cleanup logic working\n- Test: Create todo → Read todo verifies persistence\n- Test: Update todo verifies all fields update correctly\n- Test: Delete todo verifies removal from database\n- Test: Query sorting returns todos in correct order\n- Test: Concurrent operations don't cause race conditions\n- Test: Transaction integrity maintained on errors\n- All integration tests passing\n- Cleanup logic prevents test pollution\n\n## Technical Notes\nTest file: tests/integration/database.test.ts\nUse separate DATABASE_URL for tests\nReset database between tests\nTest actual Prisma operations, not mocked",
+    "System.IterationPath": "Todo-App (Tadeu Marques)",
+    "System.Reason": "Added to backlog",
+    "System.State": "To Do",
+    "System.Tags": "database; integration-tests; testing",
+    "System.TeamProject": "Todo-App (Tadeu Marques)",
+    "System.Title": "Write Integration Tests for Database Operations",
+    "System.WorkItemType": "Issue",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column": "To Do",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column.Done": false
+  },
+  "id": 2904,
+  "multilineFieldsFormat": {
+    "System.Description": "html"
+  },
+  "relations": null,
+  "rev": 1,
+  "url": "https://dev.azure.com/zartis-digital/4fe169b2-0f76-4fb2-b34b-3fcab8b568ae/_apis/wit/workItems/2904"
+}
+Creating Story 6.4: E2E Test - Create-Complete-Delete Flow...
+{
+  "fields": {
+    "Microsoft.VSTS.Common.Priority": 1,
+    "Microsoft.VSTS.Common.StateChangeDate": "2026-01-15T23:25:38.047Z",
+    "Microsoft.VSTS.Scheduling.StoryPoints": 5.0,
+    "System.AreaPath": "Todo-App (Tadeu Marques)",
+    "System.BoardColumn": "To Do",
+    "System.BoardColumnDone": false,
+    "System.ChangedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.ChangedDate": "2026-01-15T23:25:38.047Z",
+    "System.CommentCount": 0,
+    "System.CreatedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.CreatedDate": "2026-01-15T23:25:38.047Z",
+    "System.Description": "As a developer I want an E2E test for the critical user flow so that I can verify the application works end-to-end.\n\n## Context\nThis is the most important user journey: creating a task, completing it, and deleting it. This test validates that the entire stack works together.\n\n## Acceptance Criteria\nThe E2E test must:\n1. Load the homepage successfully\n2. Fill out the todo form with title, description, priority, due date\n3. Submit the form\n4. Verify the new todo appears in the Active Tasks section\n5. Verify all fields display correctly\n6. Click the checkbox to mark todo as complete\n7. Verify the todo moves to the Completed section\n8. Verify completed styling applied\n9. Click the delete button\n10. Confirm the deletion in the dialog\n11. Verify the todo disappears from the list\n12. Verify empty state appears if no other todos exist\n- All assertions pass consistently\n- Test runs in headless mode\n- Screenshots captured on failure for debugging\n\n## Technical Notes\nTest file: tests/e2e/todo-crud-flow.spec.ts\nUse Playwright or Cypress\nRun against dev server or production build\nAdd data-testid attributes if needed for reliable selectors",
+    "System.IterationPath": "Todo-App (Tadeu Marques)",
+    "System.Reason": "Added to backlog",
+    "System.State": "To Do",
+    "System.Tags": "critical-path; e2e-tests; testing",
+    "System.TeamProject": "Todo-App (Tadeu Marques)",
+    "System.Title": "E2E Test: Create-Complete-Delete Flow",
+    "System.WorkItemType": "Issue",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column": "To Do",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column.Done": false
+  },
+  "id": 2905,
+  "multilineFieldsFormat": {
+    "System.Description": "html"
+  },
+  "relations": null,
+  "rev": 1,
+  "url": "https://dev.azure.com/zartis-digital/4fe169b2-0f76-4fb2-b34b-3fcab8b568ae/_apis/wit/workItems/2905"
+}
+Creating Story 6.5: E2E Test - Form Validation...
+{
+  "fields": {
+    "Microsoft.VSTS.Common.Priority": 2,
+    "Microsoft.VSTS.Common.StateChangeDate": "2026-01-15T23:25:38.943Z",
+    "Microsoft.VSTS.Scheduling.StoryPoints": 3.0,
+    "System.AreaPath": "Todo-App (Tadeu Marques)",
+    "System.BoardColumn": "To Do",
+    "System.BoardColumnDone": false,
+    "System.ChangedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.ChangedDate": "2026-01-15T23:25:38.943Z",
+    "System.CommentCount": 0,
+    "System.CreatedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.CreatedDate": "2026-01-15T23:25:38.943Z",
+    "System.Description": "As a developer I want to verify form validation works correctly so that invalid data cannot be submitted.\n\n## Context\nForm validation prevents users from submitting incomplete todos. This test ensures validation works as expected from the user's perspective.\n\n## Acceptance Criteria\nThe E2E test must:\n1. Load the homepage\n2. Attempt to submit the form with empty title\n3. Verify error message appears\n4. Verify form does not submit (no new todo created)\n5. Fill in the title field with valid text\n6. Verify error message disappears\n7. Submit the form successfully\n8. Verify the new todo appears in the list\n- All assertions pass\n- Test covers edge cases (whitespace-only title, very long title)\n\n## Technical Notes\nTest file: tests/e2e/form-validation.spec.ts\nTest both inline validation and submit-time validation\nVerify error messages display and clear correctly",
+    "System.IterationPath": "Todo-App (Tadeu Marques)",
+    "System.Reason": "Added to backlog",
+    "System.State": "To Do",
+    "System.Tags": "e2e-tests; testing; validation",
+    "System.TeamProject": "Todo-App (Tadeu Marques)",
+    "System.Title": "E2E Test: Form Validation",
+    "System.WorkItemType": "Issue",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column": "To Do",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column.Done": false
+  },
+  "id": 2906,
+  "multilineFieldsFormat": {
+    "System.Description": "html"
+  },
+  "relations": null,
+  "rev": 1,
+  "url": "https://dev.azure.com/zartis-digital/4fe169b2-0f76-4fb2-b34b-3fcab8b568ae/_apis/wit/workItems/2906"
+}
+Creating Story 6.6: Implement Accessibility Automated Testing...
+{
+  "fields": {
+    "Microsoft.VSTS.Common.Priority": 1,
+    "Microsoft.VSTS.Common.StateChangeDate": "2026-01-15T23:25:39.707Z",
+    "Microsoft.VSTS.Scheduling.StoryPoints": 3.0,
+    "System.AreaPath": "Todo-App (Tadeu Marques)",
+    "System.BoardColumn": "To Do",
+    "System.BoardColumnDone": false,
+    "System.ChangedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.ChangedDate": "2026-01-15T23:25:39.707Z",
+    "System.CommentCount": 0,
+    "System.CreatedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.CreatedDate": "2026-01-15T23:25:39.707Z",
+    "System.Description": "As a developer I want automated accessibility testing so that I maintain WCAG AA compliance.\n\n## Context\nThe application should meet WCAG 2.1 Level AA standards. Automated testing catches common accessibility violations.\n\n## Acceptance Criteria\n- axe-core or Lighthouse CI configured for accessibility testing\n- Tests run on all major pages/states: Homepage with no todos, Homepage with active todos, Homepage with completed todos, Form in various states\n- Tests check for: Color contrast violations, Missing alt text, Improper heading hierarchy, Missing form labels, Keyboard navigation issues, ARIA attributes correctness\n- Zero accessibility violations in test results\n- Tests fail if violations are found (CI/CD blocker)\n- Test report is generated and human-readable\n- CI/CD integration complete\n\n## Technical Notes\nUse @axe-core/playwright or lighthouse CI\nGenerate reports for manual review\nDocument any accepted violations with justification\nRun on production build, not dev mode",
+    "System.IterationPath": "Todo-App (Tadeu Marques)",
+    "System.Reason": "Added to backlog",
+    "System.State": "To Do",
+    "System.Tags": "a11y; accessibility; testing; wcag",
+    "System.TeamProject": "Todo-App (Tadeu Marques)",
+    "System.Title": "Implement Accessibility Automated Testing",
+    "System.WorkItemType": "Issue",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column": "To Do",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column.Done": false
+  },
+  "id": 2907,
+  "multilineFieldsFormat": {
+    "System.Description": "html"
+  },
+  "relations": null,
+  "rev": 1,
+  "url": "https://dev.azure.com/zartis-digital/4fe169b2-0f76-4fb2-b34b-3fcab8b568ae/_apis/wit/workItems/2907"
+}
+Creating Story 6.7: Implement Performance Testing...
+{
+  "fields": {
+    "Microsoft.VSTS.Common.Priority": 1,
+    "Microsoft.VSTS.Common.StateChangeDate": "2026-01-15T23:25:40.38Z",
+    "Microsoft.VSTS.Scheduling.StoryPoints": 3.0,
+    "System.AreaPath": "Todo-App (Tadeu Marques)",
+    "System.BoardColumn": "To Do",
+    "System.BoardColumnDone": false,
+    "System.ChangedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.ChangedDate": "2026-01-15T23:25:40.38Z",
+    "System.CommentCount": 0,
+    "System.CreatedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.CreatedDate": "2026-01-15T23:25:40.38Z",
+    "System.Description": "As a developer I want to verify performance benchmarks so that the app remains fast.\n\n## Context\nPerformance requirements are defined in PRD. We need automated tests to verify we meet these benchmarks and prevent performance regressions.\n\n## Acceptance Criteria\n- Lighthouse CI or similar performance testing tool configured\n- Tests verify these thresholds: Page load time &lt; 2 seconds, Time to Interactive &lt; 3 seconds, First Contentful Paint &lt; 1 second, Largest Contentful Paint &lt; 2.5 seconds, Cumulative Layout Shift &lt; 0.1, Total Blocking Time &lt; 300ms\n- Form submission response time &lt; 500ms\n- Tests run against production build (not dev mode)\n- Tests simulate throttled connection (4G)\n- Tests fail if thresholds are exceeded\n- Performance report generated\n- CI/CD integration complete\n\n## Technical Notes\nUse Lighthouse CI or similar\nTest with production build: npm run build &amp;&amp; npm start\nSimulate 4G network throttling\nTest with various data sizes (0, 10, 100 todos)",
+    "System.IterationPath": "Todo-App (Tadeu Marques)",
+    "System.Reason": "Added to backlog",
+    "System.State": "To Do",
+    "System.Tags": "lighthouse; performance; testing",
+    "System.TeamProject": "Todo-App (Tadeu Marques)",
+    "System.Title": "Implement Performance Testing",
+    "System.WorkItemType": "Issue",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column": "To Do",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column.Done": false
+  },
+  "id": 2908,
+  "multilineFieldsFormat": {
+    "System.Description": "html"
+  },
+  "relations": null,
+  "rev": 1,
+  "url": "https://dev.azure.com/zartis-digital/4fe169b2-0f76-4fb2-b34b-3fcab8b568ae/_apis/wit/workItems/2908"
+}
+Creating Story 6.8: Set Up CI/CD Pipeline with Automated Tests...
+{
+  "fields": {
+    "Microsoft.VSTS.Common.Priority": 1,
+    "Microsoft.VSTS.Common.StateChangeDate": "2026-01-15T23:25:41.227Z",
+    "Microsoft.VSTS.Scheduling.StoryPoints": 5.0,
+    "System.AreaPath": "Todo-App (Tadeu Marques)",
+    "System.BoardColumn": "To Do",
+    "System.BoardColumnDone": false,
+    "System.ChangedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.ChangedDate": "2026-01-15T23:25:41.227Z",
+    "System.CommentCount": 0,
+    "System.CreatedBy": {
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy"
+        }
+      },
+      "descriptor": "aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "displayName": "jose.marques",
+      "id": "37c5ecd9-cd04-6e17-922a-99dc08925c82",
+      "imageUrl": "https://dev.azure.com/zartis-digital/_apis/GraphProfile/MemberAvatars/aad.MzdjNWVjZDktY2QwNC03ZTE3LTkyMmEtOTlkYzA4OTI1Yzgy",
+      "uniqueName": "jose.marques@zartis.com",
+      "url": "https://spsprodweu5.vssps.visualstudio.com/Af6c614f3-adb4-4882-be22-71b2fa67ec1d/_apis/Identities/37c5ecd9-cd04-6e17-922a-99dc08925c82"
+    },
+    "System.CreatedDate": "2026-01-15T23:25:41.227Z",
+    "System.Description": "As a developer I want tests to run automatically on every commit so that I catch issues before deployment.\n\n## Context\nAll tests should run automatically in CI/CD pipeline. This prevents broken code from reaching production and enables confident deployments.\n\n## Acceptance Criteria\nPipeline configuration:\n- CI/CD platform chosen (GitHub Actions, Azure Pipelines, etc.)\n- Pipeline triggers on: Every push to any branch, Every pull request creation/update, Manual trigger\n- Pipeline steps: 1. Install dependencies (with caching), 2. Run linting, 3. Run type checking, 4. Build application, 5. Run unit tests, 6. Run integration tests, 7. Run E2E tests, 8. Run accessibility tests, 9. Run performance tests, 10. Generate coverage report, 11. Upload coverage to reporting tool\n- Pipeline fails if any step fails\n- Branch protection rule: require pipeline success before merge\n- Pipeline completes in &lt; 10 minutes\n- Parallel execution where possible\n- Pipeline configuration documented in README\n\n## Technical Notes\nRecommended: GitHub Actions or Azure Pipelines\nCache node_modules for speed\nRun tests in parallel where possible\nUse matrix strategy for testing multiple Node versions (if needed)\nStore test artifacts (screenshots, reports) on failure",
+    "System.IterationPath": "Todo-App (Tadeu Marques)",
+    "System.Reason": "Added to backlog",
+    "System.State": "To Do",
+    "System.Tags": "automation; ci-cd; devops",
+    "System.TeamProject": "Todo-App (Tadeu Marques)",
+    "System.Title": "Set Up CI/CD Pipeline with Automated Tests",
+    "System.WorkItemType": "Issue",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column": "To Do",
+    "WEF_228B5D5B5A90435AB7F62BEFDA25CE32_Kanban.Column.Done": false
+  },
+  "id": 2909,
+  "multilineFieldsFormat": {
+    "System.Description": "html"
+  },
+  "relations": null,
+  "rev": 1,
+  "url": "https://dev.azure.com/zartis-digital/4fe169b2-0f76-4fb2-b34b-3fcab8b568ae/_apis/wit/workItems/2909"
+}
+
+✅ All 8 testing stories created successfully in Azure DevOps!
+
+Summary:
+- Total Stories: 8
+- Total Story Points: 37
+- Estimated Timeline: 2 sprints (4 weeks)
+
+Next Steps:
+1. Link stories to Epic 6 in ADO
+2. Assign stories to developers
+3. Add stories to upcoming sprints
+4. Start with Story 6.1 (testing infrastructure)
